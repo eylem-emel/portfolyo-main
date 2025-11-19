@@ -92,18 +92,18 @@
 }
 
 .hero-greeting {
-  font-size: 16px;
+  font-size: 18px;
   margin-bottom: 8px;
 }
 
 .hero-title {
-  font-size: 40px;
+  font-size: 46px;
   line-height: 1.2;
   margin: 0 0 16px;
 }
 
 .hero-subtitle {
-  font-size: 20px;
+  font-size: 22px;
   max-width: 480px;
   margin-bottom: 24px;
 }
@@ -121,7 +121,7 @@
 }
 
 .hero-status {
-  font-size: 14px;
+  font-size: 16px;
   max-width: 480px;
 }
 
@@ -153,7 +153,7 @@
    ========================================================= */
 
 .section-title {
-  font-size: 28px;
+  font-size: 32px;
   text-align: center;
   margin: 0 0 32px;
 }
@@ -211,12 +211,13 @@
 
 .profile-card h3 {
   margin: 0 0 16px;
+  font-size: 22px;
 }
 
 .profile-row {
   display: flex;
   justify-content: space-between;
-  font-size: 14px;
+  font-size: 15px;
   margin-top: 8px;
 }
 
@@ -226,7 +227,7 @@
 
 
 /* =========================================================
-   PROJECTS — Tasarıma birebir uygun
+   PROJECTS — Tasarıma göre
    ========================================================= */
 
 .projects {
@@ -253,7 +254,7 @@
 }
 
 .project-desc {
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.5;
   max-width: 360px;
 }
@@ -281,7 +282,7 @@
   margin-bottom: 24px;
 }
 
-/* Görsel en altta! */
+/* Görsel en altta */
 .project-image-wrapper {
   margin-top: auto;
   display: flex;
@@ -296,7 +297,7 @@
 
 
 /* =========================================================
-   FOOTER — Orantılı, yakın, estetik
+   FOOTER — Orantılı, yakın
    ========================================================= */
 
 .footer {
@@ -311,7 +312,7 @@
 }
 
 .footer-text {
-  font-size: 28px;
+  font-size: 32px;
   line-height: 1.3;
   flex: 1;
 }
@@ -327,7 +328,7 @@
   flex-direction: column;
   align-items: flex-start;
   gap: 6px;
-  font-size: 15px;
+  font-size: 16px;
   flex-shrink: 0;
 }
 
@@ -347,19 +348,6 @@
 
 .footer-links a:nth-child(4) {
   color: #dc2626;
-}
-
-@media (max-width: 600px) {
-  .footer {
-    flex-direction: column;
-    align-items: flex-start;
-    max-width: 100%;
-    gap: 20px;
-  }
-
-  .footer-text {
-    font-size: 24px;
-  }
 }
 
 
@@ -387,10 +375,21 @@
   }
 
   .hero-title {
-    font-size: 32px;
+    font-size: 36px;
   }
 
   .section-title {
-    font-size: 24px;
+    font-size: 26px;
+  }
+
+  .footer {
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 100%;
+    gap: 20px;
+  }
+
+  .footer-text {
+    font-size: 26px;
   }
 }
