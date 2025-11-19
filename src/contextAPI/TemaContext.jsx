@@ -1,8 +1,10 @@
 import { createContext, useContext, useEffect, useState } from "react";
 
 const getBrowserTheme = () => {
-  if (window.matchMedia &&
-      window.matchMedia("(prefers-color-scheme: dark)").matches) {
+  if (
+    window.matchMedia &&
+    window.matchMedia("(prefers-color-scheme: dark)").matches
+  ) {
     return "dark";
   }
   return "light";
@@ -17,7 +19,7 @@ export const TemaProvider = ({ children }) => {
 
   useEffect(() => {
     localStorage.setItem("appTema", tema);
-    document.body.className = tema; // body: "dark" veya "light"
+    document.body.className = tema; // "dark" veya "light"
   }, [tema]);
 
   return (
