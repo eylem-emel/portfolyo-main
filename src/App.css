@@ -1,10 +1,14 @@
+/* Uygulama genel container */
 .app {
   max-width: 1200px;
   margin: 0 auto;
   padding: 32px 24px 64px;
 }
 
-/* TOP BAR (Dark mode + language) */
+
+/* =========================================================
+   TOP BAR  (Dark Mode Switch + Language Button)
+   ========================================================= */
 
 .top-bar {
   display: flex;
@@ -21,8 +25,7 @@
   gap: 8px;
 }
 
-/* Pembe switch */
-
+/* Pembe toggle */
 .toggle-pill {
   width: 48px;
   height: 22px;
@@ -40,17 +43,12 @@
   width: 18px;
   height: 18px;
   border-radius: 50%;
-  background: #ffffff;
+  background: white;
   transition: transform 0.2s ease;
 }
 
-/* Tema durumuna göre knob pozisyonu */
 .toggle-pill.dark .toggle-knob {
   transform: translateX(24px);
-}
-
-.toggle-pill.light .toggle-knob {
-  transform: translateX(0);
 }
 
 .toggle-label {
@@ -62,8 +60,7 @@
   opacity: 0.4;
 }
 
-/* Dil butonu */
-
+/* Dil seçici */
 .language-link {
   border-radius: 999px;
   border: 1px solid rgba(15, 23, 42, 0.2);
@@ -74,15 +71,14 @@
   color: inherit;
 }
 
-.dark .top-bar {
-  color: #f9fafb;
-}
-
 .dark .language-link {
   border-color: rgba(248, 250, 252, 0.5);
 }
 
-/* HERO */
+
+/* =========================================================
+   HERO
+   ========================================================= */
 
 .hero {
   display: grid;
@@ -116,17 +112,9 @@
   margin-bottom: 24px;
 }
 
-.hero-social-link {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-}
-
 .hero-social-icon {
   width: 24px;
   height: 24px;
-  display: block;
-  object-fit: contain;
 }
 
 .hero-status {
@@ -156,7 +144,10 @@
   height: auto;
 }
 
-/* GENEL SECTION BAŞLIĞI */
+
+/* =========================================================
+   SECTION TITLE
+   ========================================================= */
 
 .section-title {
   font-size: 28px;
@@ -164,7 +155,10 @@
   margin: 0 0 32px;
 }
 
-/* SKILLS */
+
+/* =========================================================
+   SKILLS
+   ========================================================= */
 
 .skills {
   margin-bottom: 80px;
@@ -189,7 +183,10 @@
   object-fit: contain;
 }
 
-/* PROFILE */
+
+/* =========================================================
+   PROFILE
+   ========================================================= */
 
 .profile {
   margin-bottom: 80px;
@@ -202,16 +199,15 @@
 }
 
 .profile-card {
-  background: #ffffff;
+  background: white;
   border-radius: 24px;
   padding: 24px;
   box-shadow: 0 18px 40px rgba(15, 23, 42, 0.08);
-  color: #050816; /* kart içi yazı her zaman koyu */
+  color: #050816;
 }
 
 .profile-card h3 {
-  margin-top: 0;
-  margin-bottom: 16px;
+  margin: 0 0 16px;
 }
 
 .profile-row {
@@ -221,21 +217,14 @@
   margin-top: 8px;
 }
 
-.profile-row dt {
-  font-weight: 500;
-}
-
 .profile-row dd {
-  margin: 0;
   opacity: 0.8;
 }
 
-.profile-about h3 {
-  margin-top: 0;
-  margin-bottom: 16px;
-}
 
-/* PROJECTS */
+/* =========================================================
+   PROJECTS — (Tasarıma birebir uygun)
+   ========================================================= */
 
 .projects {
   margin-bottom: 80px;
@@ -247,30 +236,35 @@
   gap: 24px;
 }
 
+/* Kartlar dikey sütun hâlinde */
 .project-card {
   border-radius: 24px;
-  padding: 24px;
-  display: grid;
-  grid-template-columns: 1.1fr 1fr;
-  gap: 16px;
-  align-items: end;
-  color: #050816; /* project kartı yazısı da her zaman koyu */
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  color: #050816;
 }
 
-.project-text h3 {
-  margin-top: 0;
-  margin-bottom: 16px;
+.project-title {
+  margin: 0 0 16px;
+  font-size: 24px;
+}
+
+.project-desc {
+  font-size: 14px;
+  line-height: 1.5;
+  max-width: 360px;
 }
 
 .project-tags {
   display: flex;
   flex-wrap: wrap;
-  gap: 8px;
-  margin: 16px 0;
+  gap: 10px;
+  margin: 24px 0 20px;
 }
 
 .tag-pill {
-  background: #ffffff;
+  background: white;
   border-radius: 999px;
   padding: 4px 12px;
   font-size: 12px;
@@ -281,15 +275,27 @@
   display: flex;
   justify-content: space-between;
   font-size: 14px;
-  margin-top: 16px;
+  font-weight: 500;
+  margin-bottom: 24px;
+}
+
+/* Görsel en altta */
+.project-image-wrapper {
+  margin-top: auto;
+  display: flex;
+  justify-content: center;
 }
 
 .project-image-wrapper img {
   width: 100%;
-  display: block;
+  max-width: 380px;
+  border-radius: 16px;
 }
 
-/* FOOTER */
+
+/* =========================================================
+   FOOTER
+   ========================================================= */
 
 .footer {
   text-align: center;
@@ -297,19 +303,21 @@
   margin-top: 40px;
 }
 
-/* RESPONSIVE */
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
 
 @media (max-width: 900px) {
   .hero {
     grid-template-columns: 1fr;
   }
 
-  .hero-image-wrapper {
-    justify-content: center;
+  .projects-grid {
+    grid-template-columns: 1fr;
   }
 
-  .profile-grid,
-  .projects-grid {
+  .profile-grid {
     grid-template-columns: 1fr;
   }
 }
