@@ -2,7 +2,7 @@ export default function Projects({ projectsSection }) {
   const { title, projects } = projectsSection;
 
   return (
-    <section className="projects">
+    <section id="projects" className="projects">
       <h2 className="section-title">{title}</h2>
 
       <div className="projects-grid">
@@ -25,12 +25,8 @@ export default function Projects({ projectsSection }) {
             </div>
 
             <div className="project-links">
-              <a href={project.github} target="_blank" rel="noreferrer">
-                View on Github
-              </a>
-              <a href={project.app} target="_blank" rel="noreferrer">
-                Go to app →
-              </a>
+              <a href={project.github}>View on Github</a>
+              <a href={project.app}>Go to app →</a>
             </div>
 
             <div className="project-image-wrapper">
