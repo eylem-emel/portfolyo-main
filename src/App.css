@@ -1,4 +1,7 @@
-/* Uygulama genel container */
+/* =========================================================
+   APP WRAPPER
+   ========================================================= */
+
 .app {
   max-width: 1200px;
   margin: 0 auto;
@@ -7,7 +10,7 @@
 
 
 /* =========================================================
-   TOP BAR  (Dark Mode Switch + Language Button)
+   TOP BAR (Dark Mode Switch + Language Button)
    ========================================================= */
 
 .top-bar {
@@ -223,7 +226,7 @@
 
 
 /* =========================================================
-   PROJECTS — (Tasarıma birebir uygun)
+   PROJECTS — Tasarıma birebir uygun
    ========================================================= */
 
 .projects {
@@ -236,7 +239,6 @@
   gap: 24px;
 }
 
-/* Kartlar dikey sütun hâlinde */
 .project-card {
   border-radius: 24px;
   padding: 32px;
@@ -279,7 +281,7 @@
   margin-bottom: 24px;
 }
 
-/* Görsel en altta */
+/* Görsel en altta! */
 .project-image-wrapper {
   margin-top: auto;
   display: flex;
@@ -294,13 +296,70 @@
 
 
 /* =========================================================
-   FOOTER
+   FOOTER — Orantılı, yakın, estetik
    ========================================================= */
 
 .footer {
-  text-align: center;
-  font-size: 16px;
-  margin-top: 40px;
+  margin-top: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 48px;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.footer-text {
+  font-size: 28px;
+  line-height: 1.3;
+  flex: 1;
+}
+
+.footer-highlight {
+  background: #73b5ff;
+  border-radius: 999px;
+  padding: 0 8px;
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 6px;
+  font-size: 15px;
+  flex-shrink: 0;
+}
+
+.footer-links a {
+  text-decoration: none;
+}
+
+/* Link renkleri */
+.footer-links a:nth-child(1),
+.footer-links a:nth-child(3) {
+  color: #2563eb;
+}
+
+.footer-links a:nth-child(2) {
+  color: #111827;
+}
+
+.footer-links a:nth-child(4) {
+  color: #dc2626;
+}
+
+@media (max-width: 600px) {
+  .footer {
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 100%;
+    gap: 20px;
+  }
+
+  .footer-text {
+    font-size: 24px;
+  }
 }
 
 

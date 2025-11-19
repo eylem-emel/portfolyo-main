@@ -24,8 +24,31 @@ function App() {
         <Profile profileSection={data.profileSection} />
         <Projects projectsSection={data.projectsSection} />
       </main>
+
+      {/* FOOTER */}
       <footer className="footer">
-        <p>Let’s work together on your next product.</p>
+        <p className="footer-text">
+          Let’s <span className="footer-highlight">work together</span> on
+          <br />
+          your next product.
+        </p>
+
+        <nav className="footer-links">
+          <a href="https://github.com" target="_blank" rel="noreferrer">
+            Github
+          </a>
+          <a href="#" target="_blank" rel="noreferrer">
+            Personal Blog
+          </a>
+          <a
+            href="https://linkedin.com"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Linkedin
+          </a>
+          <a href="mailto:pratamaiosi@gmail.com">Email</a>
+        </nav>
       </footer>
     </div>
   );
