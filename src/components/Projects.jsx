@@ -7,29 +7,36 @@ export default function Projects({ projectsSection }) {
 
       <div className="projects-grid">
         {projects.map((project) => (
-          <div key={project.name} className="project-card">
+          <article
+            key={project.name}
+            className="project-card"
+            style={{ backgroundColor: project.cardBg }}
+          >
+            <h3 className="project-title">{project.name}</h3>
 
-            <div className="project-text">
-              <h3>{project.name}</h3>
-              <p>{project.description}</p>
+            <p className="project-desc">{project.description}</p>
 
-              <div className="project-tags">
-                {project.tags.map((tag) => (
-                  <span key={tag} className="tag-pill">{tag}</span>
-                ))}
-              </div>
+            <div className="project-tags">
+              {project.tags.map((tag) => (
+                <span key={tag} className="tag-pill">
+                  {tag}
+                </span>
+              ))}
+            </div>
 
-              <div className="project-links">
-                <a href={project.github} target="_blank">View on Github</a>
-                <a href={project.url} target="_blank">Go to app →</a>
-              </div>
+            <div className="project-links">
+              <a href={project.github} target="_blank" rel="noreferrer">
+                View on Github
+              </a>
+              <a href={project.app} target="_blank" rel="noreferrer">
+                Go to app →
+              </a>
             </div>
 
             <div className="project-image-wrapper">
               <img src={project.image} alt={project.name} />
             </div>
-
-          </div>
+          </article>
         ))}
       </div>
     </section>
