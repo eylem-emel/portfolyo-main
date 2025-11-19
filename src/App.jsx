@@ -1,5 +1,3 @@
-import "./App.css";
-
 import Header from "./components/Header.jsx";
 import Hero from "./components/Hero.jsx";
 import Skills from "./components/Skills.jsx";
@@ -34,20 +32,11 @@ function App() {
         </p>
 
         <nav className="footer-links">
-          <a href="https://github.com" target="_blank" rel="noreferrer">
-            Github
-          </a>
-          <a href="#" target="_blank" rel="noreferrer">
-            Personal Blog
-          </a>
-          <a
-            href="https://linkedin.com"
-            target="_blank"
-            rel="noreferrer"
-          >
-            Linkedin
-          </a>
-          <a href="mailto:pratamaiosi@gmail.com">Email</a>
+          {/* Hepsi sayfa içi anchor → senin sitene gidiyor */}
+          <a href="#projects">Github</a>
+          <a href="#profile">Personal Blog</a>
+          <a href="#skills">Linkedin</a>
+          <a href="#hero">Email</a>
         </nav>
       </footer>
     </div>
