@@ -1,9 +1,16 @@
 export default function Hero({ herosection }) {
-  const { greeting, title, subtitle, status, email, profileimage, socials } =
-    herosection;
+  const {
+    greeting,
+    title,
+    subtitle,
+    status,
+    email,
+    profileimage,
+    socials,
+  } = herosection;
 
   return (
-    <section className="hero">
+    <section id="hero" className="hero">
       <div className="hero-text">
         <p className="hero-greeting">{greeting}</p>
         <h1 className="hero-title">{title}</h1>
@@ -14,18 +21,20 @@ export default function Hero({ herosection }) {
             <a
               key={s.name}
               href={s.url}
-              target="_blank"
-              rel="noreferrer"
               className="hero-social-link"
             >
-              <img src={s.icon} alt={s.name} className="hero-social-icon" />
+              <img
+                src={s.icon}
+                alt={s.name}
+                className="hero-social-icon"
+              />
             </a>
           ))}
         </div>
 
         <p className="hero-status">
           {status} Invite me to join your team →{" "}
-          <a href={`mailto:${email}`} className="hero-email">
+          <a href="#hero" className="hero-email">
             {email}
           </a>
         </p>
