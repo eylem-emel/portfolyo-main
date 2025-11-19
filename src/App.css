@@ -179,10 +179,14 @@
 
 .skill-card {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  gap: 12px;
-  font-size: 14px;
+  justify-content: center;
+}
+
+.skill-icon {
+  width: 90px;
+  height: 90px;
+  object-fit: contain;
 }
 
 /* PROFILE */
@@ -202,7 +206,7 @@
   border-radius: 24px;
   padding: 24px;
   box-shadow: 0 18px 40px rgba(15, 23, 42, 0.08);
-  color: #050816;            /* ← kartın içi her zaman koyu yazı */
+  color: #050816; /* kart içi yazı her zaman koyu */
 }
 
 .profile-card h3 {
@@ -250,7 +254,7 @@
   grid-template-columns: 1.1fr 1fr;
   gap: 16px;
   align-items: end;
-  color: #050816;            /* ← project kartı da her zaman koyu yazı */
+  color: #050816; /* project kartı yazısı da her zaman koyu */
 }
 
 .project-text h3 {
@@ -270,7 +274,7 @@
   border-radius: 999px;
   padding: 4px 12px;
   font-size: 12px;
-  color: #050816;            /* ← pill içindeki text de koyu */
+  color: #050816;
 }
 
 .project-links {
