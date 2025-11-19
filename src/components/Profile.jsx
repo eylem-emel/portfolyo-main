@@ -2,7 +2,7 @@ export default function Profile({ profileSection }) {
   const { title, basicTitle, aboutTitle, info, aboutText } = profileSection;
 
   return (
-    <section className="profile">
+    <section id="profile" className="profile">
       <h2 className="section-title">{title}</h2>
 
       <div className="profile-grid">
