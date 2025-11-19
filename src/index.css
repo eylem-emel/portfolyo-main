@@ -10,11 +10,16 @@ body {
   padding: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "SF Pro Text",
     "Helvetica Neue", Arial, sans-serif;
   background: #f6f6f8;
   color: #050816;
+  font-size: 18px; /* Yazılar genel olarak büyüdü */
 }
 
 body.dark {
@@ -23,6 +28,6 @@ body.dark {
 }
 
 a {
-  text-decoration: none;
   color: inherit;
+  text-decoration: none;
 }
