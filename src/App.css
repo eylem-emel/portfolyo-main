@@ -1,0 +1,325 @@
+.app {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 32px 24px 64px;
+}
+
+/* TOP BAR (Dark mode + language) */
+
+.top-bar {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-size: 12px;
+  margin-bottom: 24px;
+  color: inherit;
+}
+
+.toggle-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Pembe switch */
+
+.toggle-pill {
+  width: 48px;
+  height: 22px;
+  border-radius: 999px;
+  border: none;
+  padding: 2px;
+  background: #ff1f7d;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  cursor: pointer;
+}
+
+.toggle-knob {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: #ffffff;
+  transition: transform 0.2s ease;
+}
+
+/* Tema durumuna göre knob pozisyonu */
+.toggle-pill.dark .toggle-knob {
+  transform: translateX(24px);
+}
+
+.toggle-pill.light .toggle-knob {
+  transform: translateX(0);
+}
+
+.toggle-label {
+  font-size: 12px;
+  color: inherit;
+}
+
+.divider {
+  opacity: 0.4;
+}
+
+/* Dil butonu */
+
+.language-link {
+  border-radius: 999px;
+  border: 1px solid rgba(15, 23, 42, 0.2);
+  padding: 3px 10px;
+  background: transparent;
+  cursor: pointer;
+  font-size: 12px;
+  color: inherit;
+}
+
+.dark .top-bar {
+  color: #f9fafb;
+}
+
+.dark .language-link {
+  border-color: rgba(248, 250, 252, 0.5);
+}
+
+/* HERO */
+
+.hero {
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  gap: 40px;
+  align-items: center;
+  margin-bottom: 80px;
+}
+
+.hero-greeting {
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+.hero-title {
+  font-size: 40px;
+  line-height: 1.2;
+  margin: 0 0 16px;
+}
+
+.hero-subtitle {
+  font-size: 20px;
+  max-width: 480px;
+  margin-bottom: 24px;
+}
+
+.hero-socials {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.hero-social-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-social-icon {
+  width: 24px;
+  height: 24px;
+  display: block;
+  object-fit: contain;
+}
+
+.hero-status {
+  font-size: 14px;
+  max-width: 480px;
+}
+
+.hero-email {
+  text-decoration: underline;
+}
+
+.hero-image-wrapper {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.hero-image-border {
+  padding: 18px;
+  border-radius: 32px;
+  background: #ff1f7d;
+}
+
+.hero-image {
+  display: block;
+  border-radius: 24px;
+  width: 100%;
+  height: auto;
+}
+
+/* GENEL SECTION BAŞLIĞI */
+
+.section-title {
+  font-size: 28px;
+  text-align: center;
+  margin: 0 0 32px;
+}
+
+/* SKILLS */
+
+.skills {
+  margin-bottom: 80px;
+}
+
+.skills-grid {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  flex-wrap: wrap;
+}
+
+.skill-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  font-size: 14px;
+}
+
+/* PROFILE */
+
+.profile {
+  margin-bottom: 80px;
+}
+
+.profile-grid {
+  display: grid;
+  grid-template-columns: 1.1fr 1.7fr;
+  gap: 32px;
+}
+
+.profile-card {
+  background: #ffffff;
+  border-radius: 24px;
+  padding: 24px;
+  box-shadow: 0 18px 40px rgba(15, 23, 42, 0.08);
+  color: #050816;            /* ← kartın içi her zaman koyu yazı */
+}
+
+.profile-card h3 {
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+
+.profile-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  margin-top: 8px;
+}
+
+.profile-row dt {
+  font-weight: 500;
+}
+
+.profile-row dd {
+  margin: 0;
+  opacity: 0.8;
+}
+
+.profile-about h3 {
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+
+/* PROJECTS */
+
+.projects {
+  margin-bottom: 80px;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+.project-card {
+  border-radius: 24px;
+  padding: 24px;
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  gap: 16px;
+  align-items: end;
+  color: #050816;            /* ← project kartı da her zaman koyu yazı */
+}
+
+.project-text h3 {
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+
+.project-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 16px 0;
+}
+
+.tag-pill {
+  background: #ffffff;
+  border-radius: 999px;
+  padding: 4px 12px;
+  font-size: 12px;
+  color: #050816;            /* ← pill içindeki text de koyu */
+}
+
+.project-links {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  margin-top: 16px;
+}
+
+.project-image-wrapper img {
+  width: 100%;
+  display: block;
+}
+
+/* FOOTER */
+
+.footer {
+  text-align: center;
+  font-size: 16px;
+  margin-top: 40px;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 900px) {
+  .hero {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-image-wrapper {
+    justify-content: center;
+  }
+
+  .profile-grid,
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .app {
+    padding: 24px 16px 48px;
+  }
+
+  .hero-title {
+    font-size: 32px;
+  }
+
+  .section-title {
+    font-size: 24px;
+  }
+}

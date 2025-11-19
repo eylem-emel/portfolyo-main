@@ -1,0 +1,28 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "SF Pro Text",
+    "Helvetica Neue", Arial, sans-serif;
+  background: #f6f6f8;
+  color: #050816;
+}
+
+body.dark {
+  background: #050816;
+  color: #f9fafb;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}

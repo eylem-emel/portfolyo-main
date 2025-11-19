@@ -1,0 +1,143 @@
+{
+  "en": {
+    "name": "Emel",
+    "herosection": {
+      "greeting": "Hi! 👋",
+      "title": "I’m Emel. I’m a full-stack developer.",
+      "subtitle": "I can craft solid and scalable frontend products. Let’s meet!",
+      "status": "Currently freelancing for UX, UI, & Web Design projects.",
+      "email": "pratamaiosi@gmail.com",
+      "profileimage": "/profil.png",
+      "socials": [
+        {
+          "name": "GitHub",
+          "url": "https://github.com/...",
+          "icon": "/githup.svg"
+        },
+        {
+          "name": "LinkedIn",
+          "url": "https://linkedin.com/in/...",
+          "icon": "/linkedIn.png"
+        }
+      ]
+    },
+    "skillsSection": {
+      "title": "Skills",
+      "skills": [
+        { "name": "JAVASCRIPT", "icon": "/js.png" },
+        { "name": "REACT", "icon": "/react.png" },
+        { "name": "REDUX", "icon": "/redux.png" },
+        { "name": "NODE", "icon": "/node.png" },
+        { "name": "VS CODE", "icon": "/vs-code.png" },
+        { "name": "FIGMA", "icon": "/figma.png" }
+      ]
+    },
+    "profileSection": {
+      "title": "Profile",
+      "basicTitle": "Basic Information",
+      "aboutTitle": "About me",
+      "info": [
+        { "question": "Birth Date", "answer": "22.07.1989" },
+        { "question": "Location", "answer": "Mersin, Türkiye" },
+        {
+          "question": "Education",
+          "answer": "Master's Degree - Labour Economics and Industrial Relations"
+        },
+        { "question": "Preferred Role", "answer": "Frontend, UI" }
+      ],
+      "aboutText": "Hi! I'm Emel, a passionate software developer specializing in front-end technologies. I enjoy building interactive, user-friendly web applications and I’m always eager to learn new tools."
+    },
+    "projectsSection": {
+      "title": "Projects",
+      "projects": [
+        {
+          "cardBg": "#e5f0ff",
+          "name": "Random Jokes",
+          "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam aut, odit laborum aliquam voluptatum nisi mollitia.",
+          "tags": ["react", "vercel", "axios", "router"],
+          "github": "https://github.com/...",
+          "app": "https://random-jokes.vercel.app",
+          "image": "/project1.png"
+        },
+        {
+          "cardBg": "#ddf8f0",
+          "name": "Are you bored?",
+          "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta quod deserunt quam temporibus cumque magnam!",
+          "tags": ["react", "redux", "axios", "router", "vercel"],
+          "github": "https://github.com/...",
+          "app": "https://are-you-bored.vercel.app",
+          "image": "/project2.png"
+        }
+      ]
+    }
+  },
+  "tr": {
+    "name": "Emel",
+    "herosection": {
+      "greeting": "Merhaba! 👋",
+      "title": "Ben Emel. Full-stack geliştiricisiyim.",
+      "subtitle": "Sağlam ve ölçeklenebilir frontend ürünleri geliştiriyorum. Tanışalım!",
+      "status": "Şu anda UX, UI & Web Design projelerinde freelancer olarak çalışıyorum.",
+      "email": "pratamaiosi@gmail.com",
+      "profileimage": "/profil.png",
+      "socials": [
+        {
+          "name": "GitHub",
+          "url": "https://github.com/...",
+          "icon": "/githup.svg"
+        },
+        {
+          "name": "LinkedIn",
+          "url": "https://linkedin.com/in/...",
+          "icon": "/linkedIn.png"
+        }
+      ]
+    },
+    "skillsSection": {
+      "title": "Yetenekler",
+      "skills": [
+        { "name": "JAVASCRIPT", "icon": "/js.png" },
+        { "name": "REACT", "icon": "/react.png" },
+        { "name": "REDUX", "icon": "/redux.png" },
+        { "name": "NODE", "icon": "/node.png" },
+        { "name": "VS CODE", "icon": "/vs-code.png" },
+        { "name": "FIGMA", "icon": "/figma.png" }
+      ]
+    },
+    "profileSection": {
+      "title": "Profil",
+      "basicTitle": "Temel Bilgiler",
+      "aboutTitle": "Hakkımda",
+      "info": [
+        { "question": "Doğum Tarihi", "answer": "22.07.1989" },
+        { "question": "Konum", "answer": "Mersin, Türkiye" },
+        { "question": "Eğitim", "answer": "Yüksek Lisans - ÇEKO" },
+        { "question": "Tercih Ettiği Rol", "answer": "Frontend, UI" }
+      ],
+      "aboutText": "Merhaba! Ben Emel, tutkulu bir yazılım geliştiricisiyim ve ön yüz teknolojilerinde uzmanlaşıyorum. Kullanıcı dostu ve etkileşimli web uygulamaları geliştirmeyi seviyorum."
+    },
+    "projectsSection": {
+      "title": "Projeler",
+      "projects": [
+        {
+          "cardBg": "#e5f0ff",
+          "name": "Random Jokes",
+          "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam aut, odit laborum aliquam voluptatum nisi mollitia.",
+          "tags": ["react", "vercel", "axios", "router"],
+          "github": "https://github.com/...",
+          "app": "https://random-jokes.vercel.app",
+          "image": "/project1.png"
+        },
+        {
+          "cardBg": "#ddf8f0",
+          "name": "Canın mı sıkıldı?",
+          "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta quod deserunt quam temporibus cumque magnam!",
+          "tags": ["react", "redux", "axios", "router", "vercel"],
+          "github": "https://github.com/...",
+          "app": "https://are-you-bored.vercel.app",
+          "image": "/project2.png"
+        }
+      ]
+    }
+  }
+}
